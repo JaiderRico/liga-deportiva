@@ -1,9 +1,16 @@
-﻿namespace SportsLeague.API.DTOs.Response;
+﻿using SportsLeague.Domain.Enums;
+
+namespace SportsLeague.API.DTOs.Response;
 
 public class SponsorResponseDTO
 {
     public int Id { get; set; }
+
     public string Name { get; set; } = string.Empty;
     public string Industry { get; set; } = string.Empty;
-    public string Category { get; set; } = string.Empty; // Aquí mapearemos el string del Enum
+    public string ContactEmail { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+
+    public SponsorCategory Category { get; set; }
+
 }

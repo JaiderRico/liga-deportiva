@@ -1,9 +1,9 @@
-﻿using SportsLeague.Domain.Entities;
+﻿// SportsLeague.Domain/Interfaces/Repositories/ISponsorRepository.cs
+using SportsLeague.Domain.Entities;
 
 namespace SportsLeague.Domain.Interfaces.Repositories;
 
 public interface ISponsorRepository : IGenericRepository<Sponsor>
 {
-    Task<Sponsor?> GetByNameAsync(string name);
-    Task<IEnumerable<Sponsor>> GetByIndustryAsync(string industry);
+    Task<bool> ExistsByNameAsync(string name, int? excludeId = null);
 }

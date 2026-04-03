@@ -28,9 +28,6 @@ namespace SportsLeague.DataAccess.Repositories
                 //.ThenInclude(t => t.Players) // Si quieres incluir también los jugadores de cada equipo
                 .FirstOrDefaultAsync();
 
-            //Primero estoy en Torneo ---> luego para recuperar los equipos de ese torneo, debo pasar
-            //obligatoriamente por la tabla intermedia TournamentTeams -->
-            //y luego de ahí recuperar los equipos. Por eso el ThenInclude
         }
     }
 }

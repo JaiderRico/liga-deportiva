@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SportsLeague.Domain.Enums
+﻿namespace SportsLeague.Domain.Enums
 {
     public enum SponsorCategory
     {
